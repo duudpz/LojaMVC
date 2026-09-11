@@ -1,0 +1,287 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient( 135deg, #f8f7ff 0%, #f1efff 50%, #faf9ff 100% );
+    color: #343044;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* ==============================
+   NAVBAR
+================================= */
+
+.navbar {
+    background: linear-gradient( 90deg, #5b3cae, #7651c7, #8b68d6 ) !important;
+    padding: 15px 38px;
+    box-shadow: 0 4px 15px rgba(91, 60, 174, 0.25);
+}
+
+
+/* Nome LojaMVC */
+
+.navbar-brand {
+    color: white !important;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-right: 25px;
+    transition: 0.3s;
+}
+
+    .navbar-brand:hover {
+        transform: translateY(-1px);
+    }
+
+
+/* Links */
+
+.navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    margin: 0 4px;
+    padding: 9px 14px !important;
+    border-radius: 9px;
+    transition: all 0.25s ease;
+}
+
+
+    /* Ícones da navbar */
+
+    .navbar .nav-link i {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+
+    /* Hover */
+
+    .navbar .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.16);
+        transform: translateY(-2px);
+    }
+
+
+/* ==============================
+   TELA INICIAL
+================================= */
+
+.home-page {
+    min-height: calc(100vh - 130px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 65px;
+    text-align: center;
+}
+
+
+/* Área principal */
+
+.home-content {
+    max-width: 850px;
+    padding: 40px 50px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 10px 35px rgba(91, 60, 174, 0.08);
+    backdrop-filter: blur(5px);
+}
+
+
+    /* Título */
+
+    .home-content h1 {
+        margin: 0;
+        color: #5838a8;
+        font-size: 48px;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+
+
+        /* Sacola */
+
+        .home-content h1 .bi,
+        .home-content h1 span {
+            color: initial;
+        }
+
+
+    /* Texto */
+
+    .home-content p {
+        margin-top: 15px;
+        color: #625c70;
+        font-size: 18px;
+    }
+
+
+/* ==============================
+   BOTÕES DA HOME
+================================= */
+
+.home-buttons {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+
+/* Botão principal */
+
+.btn-primary {
+    background: linear-gradient( 135deg, #5b3cae, #805bd1 ) !important;
+    border: none !important;
+    color: white !important;
+    border-radius: 10px;
+    padding: 11px 23px;
+    font-weight: 600;
+    box-shadow: 0 5px 14px rgba(91, 60, 174, 0.25);
+    transition: all 0.25s ease;
+}
+
+    .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(91, 60, 174, 0.32);
+    }
+
+
+/* Botão secundário */
+
+.btn-outline-primary {
+    color: #6543b5 !important;
+    border: 1.5px solid #7651c7 !important;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 11px 23px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+    .btn-outline-primary:hover {
+        background-color: #7651c7 !important;
+        color: white !important;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(91, 60, 174, 0.2);
+    }
+
+
+/* ==============================
+   TÍTULOS DAS PÁGINAS
+================================= */
+
+h1 {
+    color: #5838a8;
+    font-weight: 700;
+}
+
+
+/* ==============================
+   LINKS
+================================= */
+
+a {
+    color: #6947b8;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+    a:hover {
+        color: #4e2f98;
+    }
+
+
+/* ==============================
+   TABELAS
+================================= */
+
+.table {
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 7px 25px rgba(60, 40, 100, 0.08);
+}
+
+    .table thead {
+        background: linear-gradient( 90deg, #5b3cae, #7651c7 );
+        color: white;
+    }
+
+    .table tbody tr {
+        transition: 0.2s;
+    }
+
+        .table tbody tr:hover {
+            background-color: #f6f2ff;
+        }
+
+
+/* ==============================
+   CARDS
+================================= */
+
+.card {
+    border: none;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 7px 25px rgba(60, 40, 100, 0.08);
+    transition: 0.25s;
+}
+
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 30px rgba(60, 40, 100, 0.12);
+    }
+
+.card-title {
+    color: #5838a8;
+}
+
+
+/* ==============================
+   FORMULÁRIOS
+================================= */
+
+.form-control {
+    border: 1px solid #d8d0ea;
+    border-radius: 9px;
+    padding: 10px 13px;
+    transition: 0.25s;
+}
+
+    .form-control:focus {
+        border-color: #7651c7;
+        box-shadow: 0 0 0 3px rgba(118, 81, 199, 0.12);
+    }
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-top: 1px solid #e4def0;
+    padding: 18px 0;
+    color: #756f80;
+}
+
+    footer a {
+        color: #6947b8;
+        font-weight: 500;
+    }
